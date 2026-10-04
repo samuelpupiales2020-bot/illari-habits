@@ -4,10 +4,8 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="theme-color" content="#0f766e">
-<link rel="manifest" href="manifest.json">
 <link rel="icon" href="icon-192.png">
 <link rel="apple-touch-icon" href="icon-192.png">
-<meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="description" content="Illari: app de hábitos para estudiantes">
 <title>Illari – Hábitos que amanecen</title>
 <style>
@@ -93,7 +91,7 @@ label{font-size:.9rem;color:var(--mut)}
 <body>
 <nav><div class="wrap">
   <div class="logo"><svg width="26" height="26" viewBox="0 0 32 32"><circle cx="16" cy="18" r="8" fill="#fbbf24"/><path d="M2 26h28" stroke="#2dd4bf" stroke-width="3" stroke-linecap="round"/></svg>ILLARI</div>
-  <div class="links"><a class="h" href="#cats">Categorías</a><a class="h" href="#como">Cómo funciona</a><a class="h" href="#app">Mi espacio</a><button class="btn" id="theme">🌓</button></div>
+  <div class="links"><a class="h" href="#cats">Categorías</a><a class="h" href="#como">Cómo funciona</a><a class="h" href="app.html">Abrir app</a><button class="btn" id="theme">🌓</button></div>
 </div></nav>
 
 <header class="hero">
@@ -115,7 +113,7 @@ label{font-size:.9rem;color:var(--mut)}
       <span class="badge">✨ Hecho para estudiantes</span>
       <h1>Convierte tu estudio en un <em>amanecer</em> cada día</h1>
       <p>Illari significa «amanecer» en quechua. Crea hábitos, mantén tu racha, sube de nivel y enfócate con un solo lugar pensado para tu vida universitaria.</p>
-      <a class="btn y" href="#app">Comenzar mi día →</a> <a class="btn g" href="#como">Ver cómo funciona</a>
+      <a class="btn y" href="app.html">Abrir la app →</a> <a class="btn g" href="#como">Ver cómo funciona</a>
     </div>
     <div class="phone"><div class="scr">
       <small>Buenos días ☀️</small><div style="font-weight:700;margin:2px 0">Nivel 4 · 372 XP</div><div class="b"><i></i></div>
@@ -148,195 +146,21 @@ label{font-size:.9rem;color:var(--mut)}
   </div>
 </div></section>
 
-<section class="sec app" id="app"><div class="wrap">
-<div class="eye">Tu panel</div>
-    <h2>Mi espacio</h2>
-    <div class="tabs" id="tabs"></div>
-
-    <div class="panel card" id="p-hoy">
-      <h3 id="greet"></h3><p class="quote" id="quote"></p>
-      <b id="lvl"></b><div class="bar"><i id="xpb"></i></div>
-      <b id="prog"></b><div class="bar"><i id="fill" style="background:var(--pri)"></i></div>
-      <b>¿Cómo te sientes hoy?</b><div class="chips" id="mood"></div>
-      <div class="chips" id="filter"></div>
-      <div id="today"></div>
-    </div>
-
-    <div class="panel card" id="p-hab">
-      <h3>Nuevo hábito</h3>
-      <div class="form">
-        <div class="r"><input type="text" id="name" placeholder="Ej: Repasar apuntes 30 min" maxlength="60">
-          <select id="icon"></select><select id="cat"></select></div>
-        <input type="text" id="goal" placeholder="Meta (opcional): ej. 30 min al día" maxlength="40">
-        <div class="chips" id="days"></div>
-        <button class="btn p" id="add">Añadir hábito</button>
-      </div>
-      <h3 style="margin-top:20px">Todos mis hábitos</h3>
-      <div id="all"></div>
-    </div>
-
-    <div class="panel card" id="p-pro">
-      <div class="card" id="sum" style="margin-bottom:14px"></div><div class="stats" id="stats"></div>
-      <b>Últimos 7 días</b><div class="wk" id="wk"></div>
-      <b>Mapa de calor (28 días)</b><div class="heat" id="heat" style="margin-top:8px"></div>
-    </div>
-
-    <div class="panel" id="p-log"><div class="grid" id="ach"></div></div>
-
-    <div class="panel card timer" id="p-foc">
-      <h3 id="mode">Enfoque</h3><div class="time" id="time">25:00</div>
-      <button class="btn p" id="go">Iniciar</button> <button class="btn" id="rst">Reiniciar</button> <button class="btn" id="sw">Cambiar modo</button>
-      <div style="display:flex;gap:14px;justify-content:center;flex-wrap:wrap;margin-top:14px"><label>Enfoque <input type="number" id="fm" value="25" min="1" max="120" style="width:72px"> min</label><label>Descanso <input type="number" id="bm" value="5" min="1" max="60" style="width:72px"> min</label></div>
-      <p style="margin-top:12px">Pomodoros completados: <b id="pc">0</b></p>
-    </div>
-
-    <div style="margin-top:14px;display:flex;gap:8px;flex-wrap:wrap">
-      <button class="btn" id="exp">⬇ Exportar</button>
-      <label class="btn">⬆ Importar<input type="file" id="imp" accept=".json" hidden></label>
-      <button class="btn" id="clr">🗑 Borrar todo</button>
-    </div>
-</div></section>
+<section class="sec app" id="app"><div class="wrap" style="text-align:center"><div class="eye">Prueba Illari</div><h2>Lleva tus hábitos en el bolsillo</h2>
+<p style="color:var(--mut);max-width:520px;margin:0 auto 22px">Illari también es una app móvil instalable: ábrela, crea tus hábitos y úsala incluso sin conexión.</p>
+<a class="btn y" href="app.html">Abrir la app →</a>
+<div class="grid" style="margin-top:36px;text-align:left">
+<div class="card"><h3>📱 Android</h3><p>Abre la app en Chrome, toca el menú ⋮ y elige «Instalar aplicación».</p></div>
+<div class="card"><h3>🍎 iPhone</h3><p>Abre la app en Safari, toca Compartir y elige «Añadir a pantalla de inicio».</p></div>
+<div class="card"><h3>💻 Computador</h3><p>En Chrome, usa el ícono de instalar que aparece en la barra de direcciones.</p></div></div></div></section>
 <footer><div class="wrap"><div><b style="color:var(--tx);letter-spacing:2px">ILLARI</b><br>Hábitos que amanecen.</div><div>Proyecto de Ingeniería de Software<br>Tus datos se guardan en tu dispositivo.<br>Fotografías: Unsplash</div></div></footer>
 
 <script>
-/* ===== 1. Datos ===== */
-const KEY="illari:v1";
-const Store={
-  load(){try{return JSON.parse(localStorage.getItem(KEY))||{habits:[],pomos:0}}catch(e){return{habits:[],pomos:0}}},
-  save(){try{localStorage.setItem(KEY,JSON.stringify(S))}catch(e){}}
-};
-let S=Store.load();S.mood=S.mood||{};
-const CATS=["📖 Estudio","💪 Salud","🧘 Mente","👥 Social","🎨 Creativo"];
-const ICONS=["📚","✍️","💧","🏃","😴","🧠","🎧","🥗","💻","🎨"];
-const DL={1:"L",2:"M",3:"X",4:"J",5:"V",6:"S",0:"D"},ORDER=[1,2,3,4,5,6,0];
-const QUOTES=["Pequeños pasos, grandes amaneceres.","La constancia vence al talento.","Hoy cuenta, aunque sea poco.","Lo que repites, te construye.","Empieza donde estás, con lo que tienes."];
-
-/* ===== 2. Lógica ===== */
-const ds=d=>d.getFullYear()+"-"+String(d.getMonth()+1).padStart(2,"0")+"-"+String(d.getDate()).padStart(2,"0");
-const back=n=>{const d=new Date();d.setDate(d.getDate()-n);return d};
-const sched=(h,d)=>h.days.includes(d.getDay())&&ds(d)>=h.created;
-const isDone=(h,d)=>h.done.includes(ds(d));
-function streak(h){let s=0;for(let i=0;i<365;i++){const d=back(i);if(ds(d)<h.created)break;if(!sched(h,d))continue;if(isDone(h,d))s++;else if(i>0)break}return s}
-function best(h){let c=0,b=0;for(let i=365;i>=0;i--){const d=back(i);if(!sched(h,d))continue;if(isDone(h,d)){c++;b=Math.max(b,c)}else if(i>0)c=0}return b}
-function dayStat(d){const l=S.habits.filter(h=>sched(h,d));return{n:l.length,ok:l.filter(h=>isDone(h,d)).length}}
-const total=()=>S.habits.reduce((a,h)=>a+h.done.length,0);
-const xp=()=>total()*10+S.pomos*5;
-const ACH=[
-  {i:"🌱",t:"Primer paso",d:"Crea tu primer hábito",f:()=>S.habits.length>=1},
-  {i:"🔥",t:"Racha de 3",d:"3 días seguidos",f:()=>S.habits.some(h=>best(h)>=3)},
-  {i:"⚡",t:"Semana perfecta",d:"Racha de 7 días",f:()=>S.habits.some(h=>best(h)>=7)},
-  {i:"🏅",t:"30 cumplidos",d:"30 check en total",f:()=>total()>=30},
-  {i:"🧩",t:"Constructor",d:"Tener 5 hábitos",f:()=>S.habits.length>=5},
-  {i:"🍅",t:"Enfocado",d:"5 pomodoros",f:()=>S.pomos>=5},
-  {i:"🎯",t:"Con meta",d:"Un hábito con meta",f:()=>S.habits.some(h=>h.goal)},
-  {i:"😊",t:"Autoconocimiento",d:"7 check-ins de ánimo",f:()=>Object.keys(S.mood).length>=7},
-  {i:"🌟",t:"Día perfecto",d:"Cumple todo en un día",f:()=>[...Array(30)].some((_,i)=>{const d=dayStat(back(i));return d.n>0&&d.ok===d.n})},
-  {i:"💎",t:"Nivel 5",d:"Alcanza 400 XP",f:()=>xp()>=400},
-  {i:"🚀",t:"100 cumplidos",d:"100 check en total",f:()=>total()>=100},
-  {i:"🏔️",t:"Racha de 21",d:"21 días seguidos",f:()=>S.habits.some(h=>best(h)>=21)}
-];
-const MOODS=["😞","😕","😐","🙂","🤩"],WD=["domingo","lunes","martes","miércoles","jueves","viernes","sábado"];
-function addHabit(){
-  const n=$("name").value.trim();if(!n)return;
-  const days=[...document.querySelectorAll("#days .chip.on")].map(c=>+c.dataset.d);
-  S.habits.push({id:Date.now(),name:n,icon:$("icon").value,cat:$("cat").value,days:days.length?days:[0,1,2,3,4,5,6],done:[],goal:$("goal").value.trim(),note:"",created:ds(new Date())});$("goal").value="";
-  $("name").value="";Store.save();render();
-}
-function toggle(id){const h=S.habits.find(x=>x.id===id),t=ds(new Date());h.done=h.done.includes(t)?h.done.filter(x=>x!==t):[...h.done,t];Store.save();render()}
-function edit(id){const h=S.habits.find(x=>x.id===id);const n=prompt("Nombre del hábito:",h.name);if(n===null)return;h.name=n.trim()||h.name;const g=prompt("Meta (opcional):",h.goal||"");if(g!==null)h.goal=g.trim();const t=prompt("Nota (opcional):",h.note||"");if(t!==null)h.note=t.trim();Store.save();render()}
-function remove(id){if(confirm("¿Eliminar este hábito?")){S.habits=S.habits.filter(x=>x.id!==id);Store.save();render()}}
-
-/* ===== 3. Interfaz ===== */
 const $=id=>document.getElementById(id);
-const el=(t,c,x)=>{const e=document.createElement(t);if(c)e.className=c;if(x!==undefined)e.textContent=x;return e};
-let tab="hoy",flt="Todas";
-const TABS={hoy:"🌞 Hoy",hab:"➕ Hábitos",pro:"📊 Progreso",log:"🏆 Logros",foc:"🍅 Enfoque"};
-function renderTabs(){
-  const t=$("tabs");t.innerHTML="";
-  for(const k in TABS){const b=el("button","btn tab"+(k===tab?" on":""),TABS[k]);b.onclick=()=>{tab=k;render()};t.appendChild(b)}
-  for(const k in TABS)$("p-"+k).classList.toggle("on",k===tab);
-}
-function renderHoy(){
-  const h=new Date().getHours(),now=new Date(),t=ds(now);
-  $("greet").textContent=(h<12?"Buenos días ☀️":h<19?"Buenas tardes 🌤️":"Buenas noches 🌙");
-  $("quote").textContent=QUOTES[now.getDate()%QUOTES.length];
-  const x=xp();$("lvl").textContent="Nivel "+(Math.floor(x/100)+1)+" · "+x+" XP";$("xpb").style.width=(x%100)+"%";
-  const list=S.habits.filter(k=>sched(k,now));
-  const ok=list.filter(k=>isDone(k,now)).length;
-  $("prog").textContent="Hoy: "+ok+" de "+list.length+" completados";
-  $("fill").style.width=list.length?ok/list.length*100+"%":"0";
-  const f=$("filter");f.innerHTML="";
-  ["Todas",...CATS].forEach(c=>{const b=el("button","chip"+(c===flt?" on":""),c);b.onclick=()=>{flt=c;render()};f.appendChild(b)});
-  const box=$("today");box.innerHTML="";
-  const shown=list.filter(k=>flt==="Todas"||k.cat===flt);
-  if(!shown.length)box.appendChild(el("div","empty","No hay hábitos para hoy aquí. Crea uno en la pestaña Hábitos."));
-  shown.forEach(k=>{
-    const r=el("div","row"),on=isDone(k,now);
-    const c=el("button","chk"+(on?" on":""),on?"✓":"");c.onclick=()=>toggle(k.id);
-    const i=el("div","info");i.appendChild(el("b","",k.name));i.appendChild(el("small","",k.cat+" · 🔥 racha "+streak(k)+" · mejor "+best(k)));if(k.goal||k.note)i.appendChild(el("small","",(k.goal?"🎯 "+k.goal+"  ":"")+(k.note?"📝 "+k.note:"")));
-    r.append(el("span","ico",k.icon),i,c);box.appendChild(r);
-  });
-}
-function renderHab(){
-  const box=$("all");box.innerHTML="";
-  if(!S.habits.length)box.appendChild(el("div","empty","Aún no tienes hábitos."));
-  S.habits.forEach(k=>{
-    const r=el("div","row"),i=el("div","info");
-    i.appendChild(el("b","",k.name));i.appendChild(el("small","",k.cat+" · "+ORDER.filter(d=>k.days.includes(d)).map(d=>DL[d]).join(" ")+(k.goal?" · 🎯 "+k.goal:"")));
-    const d=el("button","btn","✕");d.onclick=()=>remove(k.id);
-    const e=el("button","btn","✏️");e.onclick=()=>edit(k.id);e.setAttribute("aria-label","Editar");
-    r.append(el("span","ico",k.icon),i,e,d);box.appendChild(r);
-  });
-}
-function renderPro(){
-  const week=[...Array(7)].map((_,i)=>dayStat(back(6-i)));
-  const n=week.reduce((a,d)=>a+d.n,0),o=week.reduce((a,d)=>a+d.ok,0);
-  const mv=[...Array(7)].map((_,i)=>S.mood[ds(back(i))]).filter(v=>v!==undefined);
-  const bd=week.map((d,i)=>[d.n?d.ok/d.n:-1,back(6-i)]).sort((a,b)=>b[0]-a[0])[0];
-  const sm=$("sum");sm.innerHTML="";
-  sm.append(el("h3","","📅 Resumen semanal"),el("p","","Completaste "+o+" de "+n+" hábitos programados ("+(n?Math.round(o/n*100):0)+"%). "+(bd&&bd[0]>0?"Tu mejor día fue el "+WD[bd[1].getDay()]+". ":"")+(mv.length?"Ánimo promedio: "+MOODS[Math.round(mv.reduce((a,b)=>a+b,0)/mv.length)]+".":"Registra tu ánimo cada día para ver tu promedio.")));
-  const st=$("stats");st.innerHTML="";
-  [["Hábitos",S.habits.length],["Check totales",total()],["Cumplimiento 7d",(n?Math.round(o/n*100):0)+"%"],["Mejor racha",Math.max(0,...S.habits.map(best))]]
-   .forEach(([a,b])=>{const c=el("div","card stat");c.append(el("b","",b),el("small","",a));st.appendChild(c)});
-  const wk=$("wk");wk.innerHTML="";
-  week.forEach((d,i)=>{const c=el("div");const b=el("i");b.style.height=(d.n?d.ok/d.n*90:0)+"px";c.append(b,el("span","",DL[back(6-i).getDay()]));wk.appendChild(c)});
-  const hm=$("heat");hm.innerHTML="";
-  for(let i=27;i>=0;i--){const d=dayStat(back(i)),s=el("span",d.n&&d.ok?"l"+Math.ceil(d.ok/d.n*4):"");s.title=ds(back(i));hm.appendChild(s)}
-}
-function renderLog(){
-  const g=$("ach");g.innerHTML="";
-  ACH.forEach(a=>{const c=el("div","card ach"+(a.f()?" ok":""));c.append(el("div","ico",a.i),el("h3","",a.t),el("p","",a.d));g.appendChild(c)});
-}
-function render(){renderTabs();renderHoy();renderHab();renderPro();renderLog();renderMood();$("pc").textContent=S.pomos}
-
-/* ===== 4. Formulario y utilidades ===== */
-ICONS.forEach(i=>$("icon").appendChild(new Option(i,i)));
-CATS.forEach(c=>$("cat").appendChild(new Option(c,c)));
-ORDER.forEach(d=>{const b=el("button","chip on",DL[d]);b.dataset.d=d;b.onclick=()=>b.classList.toggle("on");$("days").appendChild(b)});
-$("add").onclick=addHabit;
-$("name").onkeydown=e=>{if(e.key==="Enter")addHabit()};
 $("theme").onclick=()=>{const l=document.documentElement.classList.toggle("light");try{localStorage.setItem("illari:theme",l?"l":"d")}catch(e){}};
 try{if(localStorage.getItem("illari:theme")==="l")document.documentElement.classList.add("light")}catch(e){}
-$("exp").onclick=()=>{const a=el("a");a.href=URL.createObjectURL(new Blob([JSON.stringify(S)],{type:"application/json"}));a.download="illari-respaldo.json";a.click()};
-$("imp").onchange=e=>{const f=e.target.files[0];if(!f)return;const r=new FileReader();r.onload=()=>{try{const d=JSON.parse(r.result);if(Array.isArray(d.habits)){S={habits:d.habits,pomos:d.pomos||0,mood:d.mood||{}};Store.save();render()}}catch(x){alert("Archivo no válido")}};r.readAsText(f)};
-$("clr").onclick=()=>{if(confirm("Se borrarán todos tus datos. ¿Continuar?")){S={habits:[],pomos:0,mood:{}};Store.save();render()}};
-
-/* ===== 5. Pomodoro ===== */
-let focus=true,FM=25,BM=5,left=1500,tm=null;
-const paint=()=>{$("time").textContent=String(Math.floor(left/60)).padStart(2,"0")+":"+String(left%60).padStart(2,"0");$("mode").textContent=focus?"Enfoque":"Descanso";$("go").textContent=tm?"Pausar":"Iniciar"};
-function tick(){left--;if(left<=0){clearInterval(tm);tm=null;beep();if(focus){S.pomos++;Store.save();render()}focus=!focus;left=(focus?FM:BM)*60}paint()}
-$("go").onclick=()=>{if(tm){clearInterval(tm);tm=null}else tm=setInterval(tick,1000);paint()};
-$("rst").onclick=()=>{clearInterval(tm);tm=null;left=(focus?FM:BM)*60;paint()};
-$("sw").onclick=()=>{clearInterval(tm);tm=null;focus=!focus;left=(focus?FM:BM)*60;paint()};
-/* ===== 6. Extras: ánimo, sonido, fotos y animaciones ===== */
-function renderMood(){const m=$("mood"),t=ds(new Date());m.innerHTML="";MOODS.forEach((e,i)=>{const b=el("button","chip"+(S.mood[t]===i?" on":""),e);b.style.fontSize="1.3rem";b.setAttribute("aria-label","Ánimo "+(i+1));b.onclick=()=>{S.mood[t]=i;Store.save();render()};m.appendChild(b)})}
-function beep(){try{const c=new(window.AudioContext||window.webkitAudioContext)(),o=c.createOscillator(),g=c.createGain();o.connect(g);g.connect(c.destination);o.frequency.value=880;g.gain.setValueAtTime(.2,c.currentTime);g.gain.exponentialRampToValueAtTime(.001,c.currentTime+1);o.start();o.stop(c.currentTime+1)}catch(e){}}
-const dur=(id,min,max,def,set)=>{$(id).onchange=()=>{set(Math.max(min,Math.min(max,+$(id).value||def)));if(!tm){left=(focus?FM:BM)*60;paint()}}};
-dur("fm",1,120,25,v=>FM=v);dur("bm",1,60,5,v=>BM=v);
 document.querySelectorAll("[data-ph]").forEach(e=>{const u=e.dataset.ph.split("|");(function t(i){if(i>=u.length)return;const im=new Image();im.onload=()=>{e.style.backgroundImage='url("'+u[i]+'")';e.classList.add("ld")};im.onerror=()=>t(i+1);im.src=u[i]})(0)});
 if("IntersectionObserver" in window){const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add("in");io.unobserve(e.target)}}),{threshold:.12});document.querySelectorAll(".sec:not(.app) .card,.cat").forEach(e=>{e.classList.add("rv");io.observe(e)})}
-render();paint();
-if("serviceWorker" in navigator)window.addEventListener("load",()=>navigator.serviceWorker.register("sw.js").catch(()=>{}));
 </script>
 </body>
 </html>
