@@ -1,5 +1,0 @@
-FOTOS / PHOTOS
-Para usar tus propias fotos, guarda aqui archivos con estos nombres exactos (JPG):
-hero.jpg, estudio.jpg, salud.jpg, mente.jpg, social.jpg, creativo.jpg
-Si existen, la pagina las usa primero. Si no, carga fotos de Unsplash, y si no hay internet usa degradados.
-Tamano recomendado: 1200 px de ancho, menos de 300 KB cada una.
